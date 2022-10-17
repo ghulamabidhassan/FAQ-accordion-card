@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Kumbh Sans, sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 0em 1.5em 2em 1.5em;
+  border-radius: 1.5em;
+  display: grid;
+  grid-template-rows: 0.8fr 1.5fr;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.right {
+  margin-top: -2em;
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.left img {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.illus-mob {
+  top: -70%;
+  height: 13em;
+}
+
+.pattern-mob {
+  height: 7em;
+}
+
+.box {
+  height: 7em;
+  top: -30%;
+  left: 1%;
+}
+
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  margin: -0.2em 0 0.6em 0;
+}
+
+.title {
+  margin: 0.5em 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: Kumbh Sans, sans-serif;
+  transition: 200ms ease-in-out;
+}
+
+.title:hover {
+  color: var(--Soft-red);
+  transition: 200ms ease-in-out;
+}
+
+.content {
+  margin: 0.2em 0;
+  font-size: 0.8em;
+  display: none;
+  font-weight: sans-serif;
+  line-height: 1.7em;
+}
+
+.active {
+  display: block;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  border-bottom: 1px solid var(--Light-grayish-blue);
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.active-arrow {
+  transform: rotate(180deg);
+}
+
+.active-title {
+  font-weight: 600;
+  transition: 50ms ease;
+}
+
+.active-title:hover {
+  color: black;
+  transition: 50ms ease;
+}
