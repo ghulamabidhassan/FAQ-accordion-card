@@ -90,6 +90,8 @@ body {
   text-align: center;
   font-size: 2em;
   margin: -0.2em 0 0.6em 0;
+  color: black;
+  opacity: 0.9;
 }
 
 .title {
@@ -141,4 +143,95 @@ section {
 .active-title:hover {
   color: black;
   transition: 50ms ease;
+}
+
+.out-box {
+  display: none;
+}
+
+.pattern-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 85.375em) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .container {
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    padding: 5em;
+    overflow: hidden;
+  }
+
+  .right {
+    padding-right: 2em;
+  }
+
+  .pattern-mob {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .illus-mob {
+    width: fit-content;
+    top: 20%;
+    left: -18%;
+    scale: 1.6;
+  }
+
+  .pattern-desktop {
+    display: block;
+    top: -25%;
+    left: -85%;
+    scale: 2;
+  }
+
+  .out-box {
+    display: block;
+    position: absolute;
+    top: 42%;
+    left: 7%;
+    z-index: 2;
+  }
+
+  .heading {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .container {
+    font-size: 1.25em;
+  }
+
+  .illus-mob {
+    width: fit-content;
+    top: 20%;
+    left: -13%;
+    scale: 1.8;
+  }
+
+  .pattern-desktop {
+    display: block;
+    top: -40%;
+    left: -85%;
+    scale: 2;
+  }
+
+  .out-box {
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 9%;
+    scale: 1.4;
+    z-index: 2;
+  }
 }
