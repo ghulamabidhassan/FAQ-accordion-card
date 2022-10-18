@@ -153,6 +153,67 @@ section {
   display: none;
 }
 
+@media screen and (max-width: 63.5em) and (min-width: 48em) {
+  .container {
+    width: 60%;
+  }
+
+  .right {
+    padding: 0 1em 0em 1em;
+  }
+
+  .heading {
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 85.36em) and (min-width: 63.8em) {
+  body {
+    font-size: 0.85em;
+  }
+
+  .container {
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    padding: 5em;
+    overflow: hidden;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .pattern-mob {
+    display: none;
+  }
+
+  .illus-mob {
+    width: fit-content;
+    top: 20%;
+    left: -26%;
+    scale: 1.5;
+  }
+
+  .pattern-desktop {
+    display: block;
+    scale: 2;
+    top: 10%;
+    left: -70%;
+  }
+
+  .out-box {
+    display: block;
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    scale: 0.9;
+    z-index: 2;
+  }
+}
+
 @media screen and (min-width: 85.375em) {
   body {
     font-size: 0.9em;
@@ -197,7 +258,7 @@ section {
   .out-box {
     display: block;
     position: absolute;
-    top: 42%;
+    top: 43%;
     left: 7%;
     z-index: 2;
   }
@@ -210,6 +271,7 @@ section {
 @media screen and (min-width: 120em) {
   .container {
     font-size: 1.25em;
+    width: 60%;
   }
 
   .illus-mob {
@@ -221,16 +283,16 @@ section {
 
   .pattern-desktop {
     display: block;
-    top: -40%;
-    left: -85%;
+    top: -10%;
+    left: -70%;
     scale: 2;
   }
 
   .out-box {
     display: block;
     position: absolute;
-    top: 47%;
-    left: 9%;
+    top: 45%;
+    left: 14%;
     scale: 1.4;
     z-index: 2;
   }
